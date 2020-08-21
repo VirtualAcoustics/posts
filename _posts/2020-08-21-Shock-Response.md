@@ -40,8 +40,3 @@ As a final example, let us excite the previously presented five-plate structure 
 
 # Conclusion
 SEA is a statistical approach by considering an average response of similar sub-structures and is only valid at high frequencies where the modal density is sufficiently large. Individual modes are not considered in the low-frequency region as compared to deterministic approaches. SEA is a suitable method for high-frequency shock analysis and a good complementary tool to FE-methods.
-
-footnote [^1].
-
-## Footnotes
-[^1]: This is the footnote.
