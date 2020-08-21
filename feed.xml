@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://virtualacoustics.github.io/posts/feed.xml" rel="self" type="application/atom+xml" /><link href="https://virtualacoustics.github.io/posts/" rel="alternate" type="text/html" /><updated>2020-08-21T06:21:56-05:00</updated><id>https://virtualacoustics.github.io/posts/feed.xml</id><title type="html">Virtual Acoustics</title><subtitle>Dynamics Vibration Acoustics</subtitle><entry><title type="html">Shock response with SEA - What to expect?</title><link href="https://virtualacoustics.github.io/posts/shock%20analysis/2020/08/21/Shock-Response.html" rel="alternate" type="text/html" title="Shock response with SEA - What to expect?" /><published>2020-08-21T00:00:00-05:00</published><updated>2020-08-21T00:00:00-05:00</updated><id>https://virtualacoustics.github.io/posts/shock%20analysis/2020/08/21/Shock-Response</id><content type="html" xml:base="https://virtualacoustics.github.io/posts/shock%20analysis/2020/08/21/Shock-Response.html">&lt;h1 id=&quot;shock-response-with-sea---what-to-expect&quot;&gt;Shock response with SEA - What to expect?&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://virtualacoustics.github.io/posts/feed.xml" rel="self" type="application/atom+xml" /><link href="https://virtualacoustics.github.io/posts/" rel="alternate" type="text/html" /><updated>2020-08-21T06:33:42-05:00</updated><id>https://virtualacoustics.github.io/posts/feed.xml</id><title type="html">Virtual Acoustics</title><subtitle>Dynamics Vibration Acoustics</subtitle><entry><title type="html">Shock response with SEA - What to expect?</title><link href="https://virtualacoustics.github.io/posts/shock%20analysis/2020/08/21/Shock-Response.html" rel="alternate" type="text/html" title="Shock response with SEA - What to expect?" /><published>2020-08-21T00:00:00-05:00</published><updated>2020-08-21T00:00:00-05:00</updated><id>https://virtualacoustics.github.io/posts/shock%20analysis/2020/08/21/Shock-Response</id><content type="html" xml:base="https://virtualacoustics.github.io/posts/shock%20analysis/2020/08/21/Shock-Response.html">&lt;h1 id=&quot;shock-response-with-sea---what-to-expect&quot;&gt;Shock response with SEA - What to expect?&lt;/h1&gt;
 &lt;p&gt;I got a chance to revisit an application of Statistical Energy Analysis (SEA) during some course work at KTH; the application of predicting high frequency shock response of plate-like structures, which I researched in my Masters Thesis one and a half decade ago. The analysed structure is shown below, comprised of five connected metal plates.&lt;/p&gt;
 
 &lt;table&gt;
@@ -39,7 +39,7 @@
 &lt;p&gt;&lt;img src=&quot;/images/FEM_vs_SEA.png&quot; alt=&quot;&quot; title=&quot;Five-plate structure&quot; height=&quot;90%&quot; width=&quot;90%&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
-&lt;p&gt;SEA is a statistical approach by considering an average response of similar sub-structures and is only valid at high frequencies where the modal density is sufficiently large. Individual modes are not considered in the low-frequency region as compared to deterministic approaches. SEA is a suitable method for high-frequency shock analysis and a good complementary tool to FE-methods.&lt;/p&gt;</content><author><name></name></author><summary type="html">Shock response with SEA - What to expect? I got a chance to revisit an application of Statistical Energy Analysis (SEA) during some course work at KTH; the application of predicting high frequency shock response of plate-like structures, which I researched in my Masters Thesis one and a half decade ago. The analysed structure is shown below, comprised of five connected metal plates.</summary></entry><entry><title type="html">Double pendulum with torsion damper</title><link href="https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html" rel="alternate" type="text/html" title="Double pendulum with torsion damper" /><published>2020-03-13T00:00:00-05:00</published><updated>2020-03-13T00:00:00-05:00</updated><id>https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy</id><content type="html" xml:base="https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html">&lt;!--
+&lt;p&gt;SEA is a statistical approach by considering an average response of similar sub-structures and is only valid at high frequencies where the modal density is sufficiently large. Individual modes are not considered in the low-frequency region as compared to deterministic approaches. SEA is a suitable method for high-frequency shock analysis and a good complementary tool to FE-methods.&lt;/p&gt;</content><author><name></name></author><summary type="html">Shock response with SEA - What to expect? I got a chance to revisit an application of Statistical Energy Analysis (SEA) during some course work at KTH; the application of predicting high frequency shock response of plate-like structures, which I researched in my Masters Thesis one and a half decade ago. The analysed structure is shown below, comprised of five connected metal plates.</summary></entry><entry><title type="html">Double pendulum with torsion damper</title><link href="https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html" rel="alternate" type="text/html" title="Double pendulum with torsion damper" /><published>2020-03-13T00:00:00-05:00</published><updated>2020-03-13T00:00:00-05:00</updated><id>https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy</id><content type="html" xml:base="https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html">&lt;!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -55,6 +55,29 @@
 &lt;/div&gt;
     
 
+&lt;div class=&quot;cell border-box-sizing text_cell rendered&quot;&gt;&lt;div class=&quot;inner_cell&quot;&gt;
+&lt;div class=&quot;text_cell_render border-box-sizing rendered_html&quot;&gt;
+&lt;p&gt;Let us consider the double pendulum depicted in the figure below. A mass is located at each end of the massless rods concentrated at $\mathcal{P}$ and $\mathcal{Q}$. The massless rods are of length $l$ and the gravity is acting in $-\mathbf{\hat{n}}_{y}$. A torsional spring acts between the first and the second pendulum at point $\mathcal{P}$ with a stiffness of $\sigma$ and a viscous damping $\delta$.&lt;/p&gt;
+&lt;div&gt;
+&lt;figure&gt;
+  
+    &lt;img class=&quot;docimage&quot; src=&quot;/posts/images/copied_from_nb/d_pend1.png&quot; alt=&quot;&quot; style=&quot;max-width: 300px&quot; /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;/div&gt;&lt;p&gt;Recall Kane's equations:
+
+$$f_{r}^* = f_{r}$$
+&lt;/p&gt;
+&lt;p&gt;
+$$\sum_{j=1}^{N} \left[ \dot{\mathbf{p}}^{B_j} \cdot \mathbf{v}_{r}^{B_j} ~+ \dot{\mathbf{L}}^{B_j} \cdot \boldsymbol{\omega}_{r}^{B_j}\right] = \sum_{j=1}^{N} \left[ \mathbf{F}^{B_j} ~ \cdot \mathbf{v}_{r}^{B_j} ~ + \mathbf{T}^{B_j} \cdot \boldsymbol{\omega}^{B_j}_r \right]$$
+&lt;/p&gt;
+&lt;p&gt;Let's set-up the reference frames and parameters corresponding to the figure in SymPy mechanics:&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
     
     
 &lt;div class=&quot;cell border-box-sizing code_cell rendered&quot;&gt;
@@ -653,4 +676,4 @@ $\displaystyle \left[\begin{matrix}- l^{2} m \left(u_{1} + u_{2}\right)^{2} \ope
 &lt;/div&gt;
     
 
-&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name>Erik R. Gomez</name></author><summary type="html"></summary></entry></feed>

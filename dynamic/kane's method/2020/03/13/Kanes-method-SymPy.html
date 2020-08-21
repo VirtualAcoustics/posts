@@ -7,31 +7,33 @@
 <title>Double pendulum with torsion damper | Virtual Acoustics</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Double pendulum with torsion damper" />
+<meta name="author" content="Erik R. Gomez" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Dynamics Vibration Acoustics" />
-<meta property="og:description" content="Dynamics Vibration Acoustics" />
-<link rel="canonical" href="https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html" />
-<meta property="og:url" content="https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html" />
+<meta name="description" content="Application of Kane’s method assisted with SymPy." />
+<meta property="og:description" content="Application of Kane’s method assisted with SymPy." />
+<link rel="canonical" href="https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html" />
+<meta property="og:url" content="https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html" />
 <meta property="og:site_name" content="Virtual Acoustics" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-13T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Dynamics Vibration Acoustics","@type":"BlogPosting","headline":"Double pendulum with torsion damper","dateModified":"2020-03-13T00:00:00-05:00","datePublished":"2020-03-13T00:00:00-05:00","url":"https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Erik R. Gomez"},"description":"Application of Kane’s method assisted with SymPy.","@type":"BlogPosting","headline":"Double pendulum with torsion damper","url":"https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html","datePublished":"2020-03-13T00:00:00-05:00","dateModified":"2020-03-13T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/posts/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://virtualacoustics.github.io/posts/feed.xml" title="Virtual Acoustics" /><link rel="shortcut icon" type="image/x-icon" href="/posts/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Double pendulum with torsion damper | Virtual Acoustics</title>
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Double pendulum with torsion damper" />
+<meta name="author" content="Erik R. Gomez" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Dynamics Vibration Acoustics" />
-<meta property="og:description" content="Dynamics Vibration Acoustics" />
-<link rel="canonical" href="https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html" />
-<meta property="og:url" content="https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html" />
+<meta name="description" content="Application of Kane’s method assisted with SymPy." />
+<meta property="og:description" content="Application of Kane’s method assisted with SymPy." />
+<link rel="canonical" href="https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html" />
+<meta property="og:url" content="https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html" />
 <meta property="og:site_name" content="Virtual Acoustics" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-03-13T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Dynamics Vibration Acoustics","@type":"BlogPosting","headline":"Double pendulum with torsion damper","dateModified":"2020-03-13T00:00:00-05:00","datePublished":"2020-03-13T00:00:00-05:00","url":"https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://virtualacoustics.github.io/posts/2020/03/13/Kanes-method-SymPy.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Erik R. Gomez"},"description":"Application of Kane’s method assisted with SymPy.","@type":"BlogPosting","headline":"Double pendulum with torsion damper","url":"https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html","datePublished":"2020-03-13T00:00:00-05:00","dateModified":"2020-03-13T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://virtualacoustics.github.io/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -103,9 +105,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Double pendulum with torsion damper</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-13T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Double pendulum with torsion damper</h1><p class="page-description">Application of Kane's method assisted with SymPy.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-03-13T00:00:00-05:00" itemprop="datePublished">
         Mar 13, 2020
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Erik R. Gomez</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -114,33 +118,47 @@ window.onload = wrap_img;
 </span></p>
 
     
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/posts/categories/#Dynamic">Dynamic</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/posts/categories/#Kane's method">Kane's method</a>
+        
+      
+      </p>
+    
 
     
-      
-        <div class="pb-5 d-flex flex-wrap flex-justify-end">
-          <div class="px-2">
-
-    <a href="https://github.com/VirtualAcoustics/posts/tree/master/_notebooks/2020-03-13-Kanes-method-SymPy.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/posts/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/VirtualAcoustics/posts/master?filepath=_notebooks%2F2020-03-13-Kanes-method-SymPy.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/posts/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/VirtualAcoustics/posts/blob/master/_notebooks/2020-03-13-Kanes-method-SymPy.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/posts/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-        </div>
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Kinematics">Kinematics </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Choose-generalized-speeds-as:">Choose generalized speeds as: </a></li>
+<li class="toc-entry toc-h3"><a href="#Differentiation-of-vector:">Differentiation of vector: </a></li>
+<li class="toc-entry toc-h3"><a href="#Calculate-the-velocities-of-$\mathcal{P}$-and-$\mathcal{Q}$:">Calculate the velocities of $\mathcal{P}$ and $\mathcal{Q}$: </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Inertial-forces">Inertial forces </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Partial-velocities-become">Partial velocities become </a></li>
+<li class="toc-entry toc-h3"><a href="#Time-derivative-of-momentum">Time derivative of momentum </a></li>
+<li class="toc-entry toc-h3"><a href="#Evaluate-the-sum">Evaluate the sum </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Forces">Forces </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Partial-angular-velocities">Partial angular velocities </a></li>
+<li class="toc-entry toc-h3"><a href="#Torques">Torques </a></li>
+<li class="toc-entry toc-h3"><a href="#Gravity">Gravity </a></li>
+<li class="toc-entry toc-h3"><a href="#Evaluate-the-sum">Evaluate the sum </a></li>
+<li class="toc-entry toc-h3"><a href="#Generate-EOM">Generate EOM </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Different-generalized-speeds">Different generalized speeds </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -156,6 +174,31 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let us consider the double pendulum depicted in the figure below. A mass is located at each end of the massless rods concentrated at $\mathcal{P}$ and $\mathcal{Q}$. The massless rods are of length $l$ and the gravity is acting in $-\mathbf{\hat{n}}_{y}$. A torsional spring acts between the first and the second pendulum at point $\mathcal{P}$ with a stiffness of $\sigma$ and a viscous damping $\delta$.</p>
+<div>
+<figure>
+  
+    <img class="docimage" src="/posts/images/copied_from_nb/d_pend1.png" alt="" style="max-width: 300px">
+    
+    
+</figure>
+
+</div>
+<p>Recall Kane's equations:
+
+$$f_{r}^* = f_{r}$$
+</p>
+<p>
+$$\sum_{j=1}^{N} \left[ \dot{\mathbf{p}}^{B_j} \cdot \mathbf{v}_{r}^{B_j} ~+ \dot{\mathbf{L}}^{B_j} \cdot \boldsymbol{\omega}_{r}^{B_j}\right] = \sum_{j=1}^{N} \left[ \mathbf{F}^{B_j} ~ \cdot \mathbf{v}_{r}^{B_j} ~ + \mathbf{T}^{B_j} \cdot \boldsymbol{\omega}^{B_j}_r \right]$$
+</p>
+<p>Let's set-up the reference frames and parameters corresponding to the figure in SymPy mechanics:</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -167,12 +210,12 @@ window.onload = wrap_img;
 <span class="kn">import</span> <span class="nn">sympy.physics.mechanics</span> <span class="k">as</span> <span class="nn">me</span>
 <span class="n">me</span><span class="o">.</span><span class="n">init_vprinting</span><span class="p">()</span>
 
-<span class="n">q1</span><span class="p">,</span> <span class="n">q2</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">dynamicsymbols</span><span class="p">(</span><span class="s1">&#39;q1, q2&#39;</span><span class="p">)</span> <span class="c1"># Generalized coordinates as function of time</span>
-<span class="n">qd1</span><span class="p">,</span> <span class="n">qd2</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">dynamicsymbols</span><span class="p">(</span><span class="s1">&#39;q1, q2&#39;</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Time-derivative of generalized coordinates</span>
-<span class="n">u1</span><span class="p">,</span> <span class="n">u2</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">dynamicsymbols</span><span class="p">(</span><span class="s1">&#39;u1, u2&#39;</span><span class="p">)</span> <span class="c1"># Generalized speeds (function of time)</span>
+<span class="n">q1</span><span class="p">,</span> <span class="n">q2</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">dynamicsymbols</span><span class="p">(</span><span class="s1">'q1, q2'</span><span class="p">)</span> <span class="c1"># Generalized coordinates as function of time</span>
+<span class="n">qd1</span><span class="p">,</span> <span class="n">qd2</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">dynamicsymbols</span><span class="p">(</span><span class="s1">'q1, q2'</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># Time-derivative of generalized coordinates</span>
+<span class="n">u1</span><span class="p">,</span> <span class="n">u2</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">dynamicsymbols</span><span class="p">(</span><span class="s1">'u1, u2'</span><span class="p">)</span> <span class="c1"># Generalized speeds (function of time)</span>
 
-<span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;l, m, g&#39;</span><span class="p">)</span> <span class="c1"># Constants</span>
-<span class="n">sig</span><span class="p">,</span> <span class="n">delta</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;sigma, delta&#39;</span><span class="p">)</span> <span class="c1"># Force parameters</span>
+<span class="n">l</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">'l, m, g'</span><span class="p">)</span> <span class="c1"># Constants</span>
+<span class="n">sig</span><span class="p">,</span> <span class="n">delta</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">symbols</span><span class="p">(</span><span class="s1">'sigma, delta'</span><span class="p">)</span> <span class="c1"># Force parameters</span>
 </pre></div>
 
     </div>
@@ -182,7 +225,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Orient the reference frames:</p>
 
@@ -196,9 +240,9 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">ReferenceFrame</span><span class="p">(</span><span class="s1">&#39;N&#39;</span><span class="p">)</span> <span class="c1"># Inertial frame</span>
-<span class="n">A</span> <span class="o">=</span> <span class="n">N</span><span class="o">.</span><span class="n">orientnew</span><span class="p">(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;Axis&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="n">N</span><span class="o">.</span><span class="n">z</span><span class="p">))</span> <span class="c1"># Rod A frame</span>
-<span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">orientnew</span><span class="p">(</span><span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;Axis&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">q2</span><span class="p">,</span> <span class="n">N</span><span class="o">.</span><span class="n">z</span><span class="p">))</span> <span class="c1"># Rod B frame</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">ReferenceFrame</span><span class="p">(</span><span class="s1">'N'</span><span class="p">)</span> <span class="c1"># Inertial frame</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">N</span><span class="o">.</span><span class="n">orientnew</span><span class="p">(</span><span class="s1">'A'</span><span class="p">,</span> <span class="s1">'Axis'</span><span class="p">,</span> <span class="p">(</span><span class="n">q1</span><span class="p">,</span> <span class="n">N</span><span class="o">.</span><span class="n">z</span><span class="p">))</span> <span class="c1"># Rod A frame</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">orientnew</span><span class="p">(</span><span class="s1">'B'</span><span class="p">,</span> <span class="s1">'Axis'</span><span class="p">,</span> <span class="p">(</span><span class="n">q2</span><span class="p">,</span> <span class="n">N</span><span class="o">.</span><span class="n">z</span><span class="p">))</span> <span class="c1"># Rod B frame</span>
 </pre></div>
 
     </div>
@@ -208,9 +252,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Kinematics">Kinematics<a class="anchor-link" href="#Kinematics"> </a></h2><p>Rotational motion:
+<h2 id="Kinematics">
+<a class="anchor" href="#Kinematics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kinematics<a class="anchor-link" href="#Kinematics"> </a>
+</h2>
+<p>Rotational motion:
 
 $$\boldsymbol{\omega}^{A} = \dot{q}_1 \mathbf{\hat{n}_z}, \qquad         \boldsymbol{\omega}^{B} = (\dot{q}_1 + \dot{q}_2) \mathbf{\hat{n}_{z}}$$
 </p>
@@ -284,9 +332,13 @@ $\displaystyle (\dot{q}_{1} + \dot{q}_{2})\mathbf{\hat{n}_z}$
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Choose-generalized-speeds-as:">Choose generalized speeds as:<a class="anchor-link" href="#Choose-generalized-speeds-as:"> </a></h3><p>
+<h3 id="Choose-generalized-speeds-as:">
+<a class="anchor" href="#Choose-generalized-speeds-as:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Choose generalized speeds as:<a class="anchor-link" href="#Choose-generalized-speeds-as:"> </a>
+</h3>
+<p>
 $$u_1 = \dot{q}_1, \qquad  u_2 = \dot{q}_1 + \dot{q}_2$$
 
 so
@@ -312,16 +364,23 @@ $$\boldsymbol{\omega}^{A} = u_1 \mathbf{\hat{n}_z}, \qquad         \boldsymbol{\
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Differentiation-of-vector:">Differentiation of vector:<a class="anchor-link" href="#Differentiation-of-vector:"> </a></h3><p>
+<h3 id="Differentiation-of-vector:">
+<a class="anchor" href="#Differentiation-of-vector:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Differentiation of vector:<a class="anchor-link" href="#Differentiation-of-vector:"> </a>
+</h3>
+<p>
 $$\frac{^{N}d \mathbf{r}}{d t} =  \frac{^{A}d \mathbf{r}}{d t} + ^{N}\omega^{A} \times \mathbf{r} $$
 </p>
 <p>or by the two-point formula
 
 $$^{N}\mathbf{v}^{\mathcal{P}} =  ^{A}\mathbf{v}^{\mathcal{O}} + ^{N}\boldsymbol{\omega}^{A} \times \mathbf{r}_{\mathcal{OP}}.$$
 </p>
-<h3 id="Calculate-the-velocities-of-$\mathcal{P}$-and-$\mathcal{Q}$:">Calculate the velocities of $\mathcal{P}$ and $\mathcal{Q}$:<a class="anchor-link" href="#Calculate-the-velocities-of-$\mathcal{P}$-and-$\mathcal{Q}$:"> </a></h3><p>Position vectors:</p>
+<h3 id="Calculate-the-velocities-of-$\mathcal{P}$-and-$\mathcal{Q}$:">
+<a class="anchor" href="#Calculate-the-velocities-of-%24%5Cmathcal%7BP%7D%24-and-%24%5Cmathcal%7BQ%7D%24:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calculate the velocities of $\mathcal{P}$ and $\mathcal{Q}$:<a class="anchor-link" href="#Calculate-the-velocities-of-%24%5Cmathcal%7BP%7D%24-and-%24%5Cmathcal%7BQ%7D%24:"> </a>
+</h3>
+<p>Position vectors:</p>
 <p>
 $$\mathbf{r}^{\mathcal{OP}} = - l \mathbf{\hat{a}_y}$$
 </p>
@@ -347,11 +406,11 @@ $$\mathbf{v}^{\mathcal{Q}} = l u_1\mathbf{\hat{a}_x} + l u_2\mathbf{\hat{b}_x}$$
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">O</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="s1">&#39;O&#39;</span><span class="p">)</span> <span class="c1"># Origo</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">O</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">Point</span><span class="p">(</span><span class="s1">'O'</span><span class="p">)</span> <span class="c1"># Origo</span>
 <span class="n">O</span><span class="o">.</span><span class="n">set_vel</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
-<span class="n">P</span> <span class="o">=</span> <span class="n">O</span><span class="o">.</span><span class="n">locatenew</span><span class="p">(</span><span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="p">(</span> <span class="o">-</span><span class="n">l</span> <span class="o">*</span> <span class="n">A</span><span class="o">.</span><span class="n">y</span> <span class="p">))</span> <span class="c1"># Point @ end of rod A</span>
-<span class="n">Ap</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">Particle</span><span class="p">(</span><span class="s1">&#39;Ap&#39;</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span> <span class="c1"># Define mass</span>
+<span class="n">P</span> <span class="o">=</span> <span class="n">O</span><span class="o">.</span><span class="n">locatenew</span><span class="p">(</span><span class="s1">'P'</span><span class="p">,</span> <span class="p">(</span> <span class="o">-</span><span class="n">l</span> <span class="o">*</span> <span class="n">A</span><span class="o">.</span><span class="n">y</span> <span class="p">))</span> <span class="c1"># Point @ end of rod A</span>
+<span class="n">Ap</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">Particle</span><span class="p">(</span><span class="s1">'Ap'</span><span class="p">,</span> <span class="n">P</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span> <span class="c1"># Define mass</span>
 <span class="n">P</span><span class="o">.</span><span class="n">v2pt_theory</span><span class="p">(</span><span class="n">O</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">A</span><span class="p">)</span> <span class="c1"># Set velocity</span>
 </pre></div>
 
@@ -385,8 +444,8 @@ $\displaystyle l \dot{q}_{1}\mathbf{\hat{a}_x}$
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Q</span> <span class="o">=</span> <span class="n">P</span><span class="o">.</span><span class="n">locatenew</span><span class="p">(</span><span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="p">(</span> <span class="o">-</span><span class="n">l</span> <span class="o">*</span> <span class="n">B</span><span class="o">.</span><span class="n">y</span><span class="p">))</span> <span class="c1"># Point @ end of rod B</span>
-<span class="n">Bp</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">Particle</span><span class="p">(</span><span class="s1">&#39;Bp&#39;</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Q</span> <span class="o">=</span> <span class="n">P</span><span class="o">.</span><span class="n">locatenew</span><span class="p">(</span><span class="s1">'Q'</span><span class="p">,</span> <span class="p">(</span> <span class="o">-</span><span class="n">l</span> <span class="o">*</span> <span class="n">B</span><span class="o">.</span><span class="n">y</span><span class="p">))</span> <span class="c1"># Point @ end of rod B</span>
+<span class="n">Bp</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">Particle</span><span class="p">(</span><span class="s1">'Bp'</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
 <span class="n">Q</span><span class="o">.</span><span class="n">v2pt_theory</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">B</span><span class="p">)</span> <span class="c1"># Set velocity</span>
 </pre></div>
 
@@ -413,7 +472,8 @@ $\displaystyle l \dot{q}_{1}\mathbf{\hat{a}_x} + l \left(\dot{q}_{1} + \dot{q}_{
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Accelerations are needed in Kane's method:</p>
 <p>
@@ -492,9 +552,13 @@ $\displaystyle l \ddot{q}_{1}\mathbf{\hat{a}_x} + l \dot{q}_{1}^{2}\mathbf{\hat{
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Inertial-forces">Inertial forces<a class="anchor-link" href="#Inertial-forces"> </a></h2><p>Let us calculate the inertial forces before applying forces. 
+<h2 id="Inertial-forces">
+<a class="anchor" href="#Inertial-forces" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inertial forces<a class="anchor-link" href="#Inertial-forces"> </a>
+</h2>
+<p>Let us calculate the inertial forces before applying forces. 
 
 $$f^*_r= \sum_{j=1}^{N} \left[ \dot{\mathbf{p}}^{B_j} \cdot \mathbf{v}_{r}^{B_j} ~+ \dot{\mathbf{L}}^{B_j} \cdot \boldsymbol{\omega}_{r}^{B_j}\right]$$
 
@@ -506,9 +570,12 @@ $$\mathbf{v}^{\mathcal{P}} = l u_1\mathbf{\hat{a}_x}, \qquad \mathbf{v}^{\mathca
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Partial-velocities-become">Partial velocities become<a class="anchor-link" href="#Partial-velocities-become"> </a></h3>$$\mathbf{v}^{\mathcal{P}}_1 = \frac{\partial{} \mathbf{v}^{\mathcal{P}}}{\partial u_1} = l \mathbf{\hat{a}_x}, \qquad
+<h3 id="Partial-velocities-become">
+<a class="anchor" href="#Partial-velocities-become" aria-hidden="true"><span class="octicon octicon-link"></span></a>Partial velocities become<a class="anchor-link" href="#Partial-velocities-become"> </a>
+</h3>$$\mathbf{v}^{\mathcal{P}}_1 = \frac{\partial{} \mathbf{v}^{\mathcal{P}}}{\partial u_1} = l \mathbf{\hat{a}_x}, \qquad
 \mathbf{v}^{\mathcal{Q}}_1 = \frac{\partial{} \mathbf{v}^{\mathcal{Q}}}{\partial u_1} = l \mathbf{\hat{a}_x},
 $$$$\mathbf{v}^{\mathcal{P}}_2 = \frac{\partial{} \mathbf{v}^{\mathcal{P}}}{\partial u_2} = \mathbf{0}, \qquad
 \mathbf{v}^{\mathcal{Q}}_2 = \frac{\partial{} \mathbf{v}^{\mathcal{Q}}}{\partial u_2} = l \mathbf{\hat{b}_x}
@@ -516,18 +583,26 @@ $$
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Time-derivative-of-momentum">Time derivative of momentum<a class="anchor-link" href="#Time-derivative-of-momentum"> </a></h3><p>
+<h3 id="Time-derivative-of-momentum">
+<a class="anchor" href="#Time-derivative-of-momentum" aria-hidden="true"><span class="octicon octicon-link"></span></a>Time derivative of momentum<a class="anchor-link" href="#Time-derivative-of-momentum"> </a>
+</h3>
+<p>
 $$\mathbf{\dot{p}}^{\mathcal{P}} = m \left(l \dot{u}_{1}\mathbf{\hat{a}_x} + l u_{1}^{2}\mathbf{\hat{a}_y} \right), \quad \mathbf{\dot{p}}^{\mathcal{Q}} = m \left(l \dot{u}_{1}\mathbf{\hat{a}_x} + l u_{1}^{2}\mathbf{\hat{a}_y} + l \dot{u}_{2}\mathbf{\hat{b}_x} + l u_{2}^{2}\mathbf{\hat{b}_y}\right)$$
 </p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Evaluate-the-sum">Evaluate the sum<a class="anchor-link" href="#Evaluate-the-sum"> </a></h3><p>
+<h3 id="Evaluate-the-sum">
+<a class="anchor" href="#Evaluate-the-sum" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evaluate the sum<a class="anchor-link" href="#Evaluate-the-sum"> </a>
+</h3>
+<p>
 $$f^*_1 = m \left(l \dot{u}_{1}\mathbf{\hat{a}_x} + l u_{1}^{2}\mathbf{\hat{a}_y} \right) \cdot l \mathbf{\hat{a}_x} + m \left(l \dot{u}_{1}\mathbf{\hat{a}_x} + l u_{1}^{2}\mathbf{\hat{a}_y} + l \dot{u}_{2}\mathbf{\hat{b}_x} + l u_{2}^{2}\mathbf{\hat{b}_y}\right)\cdot l \mathbf{\hat{a}_x} = 2 m l^{2} \dot{u}_{1} +  m  l^{2}\dot{u}_{2} \operatorname{cos}\left(q_{2}\right)- m l^{2}  u^{2}_{2} \operatorname{sin}\left(q_{2}\right)$$
 </p>
 <p>
@@ -572,9 +647,13 @@ $\displaystyle \left[\begin{matrix}- l^{2} m u^{2}_{2} \operatorname{sin}\left(q
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Forces">Forces<a class="anchor-link" href="#Forces"> </a></h2><p>
+<h2 id="Forces">
+<a class="anchor" href="#Forces" aria-hidden="true"><span class="octicon octicon-link"></span></a>Forces<a class="anchor-link" href="#Forces"> </a>
+</h2>
+<p>
 $$ f_{r} =\sum_{j=1}^{N} \left[ \mathbf{F}^{B_j} ~ \cdot \mathbf{v}_{r}^{B_j} ~ + \mathbf{T}^{B_j} \cdot \boldsymbol{\omega}^{B_j}_r \right]$$
 </p>
 <p>Recall
@@ -585,9 +664,13 @@ $$\boldsymbol{\omega}^{A} = u_1 \mathbf{\hat{n}_z}, \qquad         \boldsymbol{\
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Partial-angular-velocities">Partial angular velocities<a class="anchor-link" href="#Partial-angular-velocities"> </a></h3><p>
+<h3 id="Partial-angular-velocities">
+<a class="anchor" href="#Partial-angular-velocities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Partial angular velocities<a class="anchor-link" href="#Partial-angular-velocities"> </a>
+</h3>
+<p>
 $$\boldsymbol{\omega}^{A}_1 = \mathbf{\hat{n}_z}, \quad \boldsymbol{\omega}^{B}_1 = \mathbf{0},$$
 </p>
 <p>
@@ -597,12 +680,13 @@ $$\boldsymbol{\omega}^{A}_2 = \mathbf{0}, \quad \boldsymbol{\omega}^{B}_2 = \mat
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div>
 <figure>
   
-    <img class="docimage" src="/posts/images/copied_from_nb/d_pend1.png" alt="" style="max-width: 300px" />
+    <img class="docimage" src="/posts/images/copied_from_nb/d_pend1.png" alt="" style="max-width: 300px">
     
     
 </figure>
@@ -611,21 +695,31 @@ $$\boldsymbol{\omega}^{A}_2 = \mathbf{0}, \quad \boldsymbol{\omega}^{B}_2 = \mat
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Torques">Torques<a class="anchor-link" href="#Torques"> </a></h3><p>
+<h3 id="Torques">
+<a class="anchor" href="#Torques" aria-hidden="true"><span class="octicon octicon-link"></span></a>Torques<a class="anchor-link" href="#Torques"> </a>
+</h3>
+<p>
 $$\mathbf{T}^{A} = \left(\sigma q_2 + \delta \dot{q}_2 \right) \mathbf{\hat{n}_z} = \left(\sigma q_2 + \delta \left(u_2 -u_1\right) \right) \mathbf{\hat{n}_z} $$
 </p>
 <p>
 $$\mathbf{T}^{B} = -\mathbf{T}^{A} $$
 </p>
-<h3 id="Gravity">Gravity<a class="anchor-link" href="#Gravity"> </a></h3><p>
+<h3 id="Gravity">
+<a class="anchor" href="#Gravity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gravity<a class="anchor-link" href="#Gravity"> </a>
+</h3>
+<p>
 $$\mathbf{F}^{\mathcal{P}} = - g m \mathbf{\hat{n}_y}$$
 
 
 $$\mathbf{F}^{\mathcal{Q}} = - g m \mathbf{\hat{n}_y}$$
 </p>
-<h3 id="Evaluate-the-sum">Evaluate the sum<a class="anchor-link" href="#Evaluate-the-sum"> </a></h3><p>Torques
+<h3 id="Evaluate-the-sum">
+<a class="anchor" href="#Evaluate-the-sum" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evaluate the sum<a class="anchor-link" href="#Evaluate-the-sum"> </a>
+</h3>
+<p>Torques
 
 $$ f_{1}^T = \mathbf{T}^{A} \cdot \mathbf{\hat{n}_z} + \mathbf{T}^{B} \cdot \mathbf{0} =  \sigma q_2 + \delta \left(u_2 -u_1\right) $$
 </p>
@@ -667,9 +761,12 @@ $$ f_{2}^F = - g m \mathbf{\hat{n}_y} \cdot \mathbf{0} - g m \mathbf{\hat{n}_y}\
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Generate-EOM">Generate EOM<a class="anchor-link" href="#Generate-EOM"> </a></h3>
+<h3 id="Generate-EOM">
+<a class="anchor" href="#Generate-EOM" aria-hidden="true"><span class="octicon octicon-link"></span></a>Generate EOM<a class="anchor-link" href="#Generate-EOM"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -680,9 +777,9 @@ $$ f_{2}^F = - g m \mathbf{\hat{n}_y} \cdot \mathbf{0} - g m \mathbf{\hat{n}_y}\
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">KM</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">KanesMethod</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="p">[</span><span class="n">q1</span><span class="p">,</span> <span class="n">q2</span><span class="p">],</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">],</span> <span class="n">kd_eqs</span><span class="o">=</span><span class="n">kde</span><span class="p">)</span> <span class="c1"># Kane&#39;s method instance</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">KM</span> <span class="o">=</span> <span class="n">me</span><span class="o">.</span><span class="n">KanesMethod</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="p">[</span><span class="n">q1</span><span class="p">,</span> <span class="n">q2</span><span class="p">],</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">],</span> <span class="n">kd_eqs</span><span class="o">=</span><span class="n">kde</span><span class="p">)</span> <span class="c1"># Kane's method instance</span>
 
-<span class="n">fr</span><span class="p">,</span> <span class="n">fstar</span> <span class="o">=</span> <span class="n">KM</span><span class="o">.</span><span class="n">kanes_equations</span><span class="p">([</span><span class="n">Ap</span><span class="p">,</span> <span class="n">Bp</span><span class="p">],</span> <span class="n">forces</span><span class="p">)</span> <span class="c1"># &quot;Evaluate the sum&quot;</span>
+<span class="n">fr</span><span class="p">,</span> <span class="n">fstar</span> <span class="o">=</span> <span class="n">KM</span><span class="o">.</span><span class="n">kanes_equations</span><span class="p">([</span><span class="n">Ap</span><span class="p">,</span> <span class="n">Bp</span><span class="p">],</span> <span class="n">forces</span><span class="p">)</span> <span class="c1"># "Evaluate the sum"</span>
 
 <span class="n">sp</span><span class="o">.</span><span class="n">Eq</span><span class="p">(</span><span class="o">-</span><span class="n">fstar</span><span class="p">,</span><span class="n">fr</span><span class="p">)</span> <span class="c1"># Output EOM</span>
 </pre></div>
@@ -710,9 +807,12 @@ $\displaystyle \left[\begin{matrix}- l^{2} m u^{2}_{2} \operatorname{sin}\left(q
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Different-generalized-speeds">Different generalized speeds<a class="anchor-link" href="#Different-generalized-speeds"> </a></h2>
+<h2 id="Different-generalized-speeds">
+<a class="anchor" href="#Different-generalized-speeds" aria-hidden="true"><span class="octicon octicon-link"></span></a>Different generalized speeds<a class="anchor-link" href="#Different-generalized-speeds"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -758,7 +858,15 @@ $\displaystyle \left[\begin{matrix}- l^{2} m \left(u_{1} + u_{2}\right)^{2} \ope
 
 
 
-  </div><a class="u-url" href="/posts/2020/03/13/Kanes-method-SymPy.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="VirtualAcoustics/posts"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/posts/dynamic/kane's%20method/2020/03/13/Kanes-method-SymPy.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
