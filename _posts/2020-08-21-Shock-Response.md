@@ -1,3 +1,10 @@
+---
+toc: true
+layout: post
+description: Shock response with SEA - What to expect?
+categories: [shock analysis]
+title: Shock response with SEA - What to expect?
+---
 # Shock response with SEA - What to expect?
 I got a chance to revisit an application of Statistical Energy Analysis (SEA) during some course work at KTH; the application of predicting high frequency shock response of plate-like structures, which I researched in my Masters Thesis one and a half decade ago. The analysed structure is shown below, comprised of five connected metal plates.
 
