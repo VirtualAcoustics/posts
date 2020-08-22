@@ -1,7 +1,8 @@
 ---
 toc: true
 layout: post
-description: Shock response with SEA - What to expect?
+author: Erik R. Gomez
+description: Example of the application of SEA in shock propagation analysis.
 categories: [shock analysis]
 title: Shock response with SEA - What to expect?
 ---
